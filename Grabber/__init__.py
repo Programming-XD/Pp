@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from resolve_peer import ResolvePeer
 from .config import *
 
-
+bot_token = "7256217879:AAHESTD3MkSCCmrZy1pVcLPTfKVe-gihfEI"
 
 class Client(PyrogramClient):
     def __init__(self, *args, **kwargs):
@@ -15,7 +15,7 @@ class Client(PyrogramClient):
         return await obj.resolve_peer(id)
 
 
-application = Application.builder().token(c.TOKEN).build()
+application = Application.builder().token(bot_token).build()
 Grabberu = Client(
     "Grabber",
     api_id=api_id,
