@@ -13,7 +13,7 @@ class Client(PyrogramClient):
         return await obj.resolve_peer(id)
 
 
-application = Application.builder().token(7256217879:AAHESTD3MkSCCmrZy1pVcLPTfKVe-gihfEI).build()
+application = Application.builder().token(config).build()
 Grabberu = Client(
     "Grabber",
     api_id=api_id,
