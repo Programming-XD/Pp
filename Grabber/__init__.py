@@ -3,7 +3,8 @@ from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
 from resolve_peer import ResolvePeer
 from .config import *
-import config as c
+
+
 
 class Client(PyrogramClient):
     def __init__(self, *args, **kwargs):
