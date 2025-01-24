@@ -12,7 +12,7 @@ devb = db.dev
 uploaderdb = db.uploader
 
 BOT_NAME = "Okarun"
-start_text = f"👋 Hi, this is {BOT_NAME}, an anime-based games bot! Add me to your group to start your journey."
+start_text = f"Greetings, adventurer!,\n I'm your guide through the mystical realm of {BOT_NAME}.\n\n Ready to embark on your quest? Tap the Add Okarun button to begin your journey! Need assistance or have tales to share? Click the Support button to find support.\n\n Lastly, stay updated on the latest magical enchantments by tapping the Updates button!"
 credits_text = (
     "Bot Credits\n\n"
     "Users below are the developers, uploaders, etc... of this bot, you can personally contact them for issues, do not DM unnecessarily.\n\n"
