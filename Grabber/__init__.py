@@ -4,7 +4,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from resolve_peer import ResolvePeer
 from .config import *
 
-bot_token = "7256217879:AAHESTD3MkSCCmrZy1pVcLPTfKVe-gihfEI"
+bot_token = "7874875277:AAEXojWAtkQQ-qC7KyIljqTXMcgxSX2PVL4"
 
 class Client(PyrogramClient):
     def __init__(self, *args, **kwargs):
