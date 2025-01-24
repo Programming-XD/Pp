@@ -7,7 +7,7 @@ from Grabber import application, user_collection
 from . import add, deduct, show, app, sudo_filter
 from .block import block_dec, temp_block
 
- log_chat_id = -1002383819050
+log_chat_id = -1002383819050
 
 last_usage_time = {}
 daily_code_usage = {}
