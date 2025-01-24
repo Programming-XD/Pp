@@ -20,7 +20,7 @@ Grabberu = Client(
     "Grabber",
     api_id=api_id,
     api_hash=api_hash,
-    bot_token=TOKEN)
+    bot_token=bot_token)
 app = Grabberu
 client = AsyncIOMotorClient(MONGO_URL)
 db = client['Character_catcher']
