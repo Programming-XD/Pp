@@ -11,7 +11,7 @@ sudb = db.sudo
 devb = db.dev
 uploaderdb = db.uploader
 
-BOT_NAME = "Okarun"
+BOT_NAME = "YxH"
 start_text = f"👋 Hi, this is {BOT_NAME}, an anime-based games bot! Add me to your group to start your journey."
 credits_text = (
     "Bot Credits\n\n"
