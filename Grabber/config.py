@@ -2,7 +2,7 @@ import os
 
 OWNER_ID = 7455169019
 GROUP_ID = "-1002383819050"
-TOKEN = os.getenv("7256217879:AAFsip_4QFFaSLxLKz5fmW6zPXYTRlB4xgw")
+TOKEN = os.getenv("7256217879:AAHESTD3MkSCCmrZy1pVcLPTfKVe-gihfEI")
 api_id = 20457610
 api_hash = "b7de0dfecd19375d3f84dbedaeb92537"
 PHOTO_URL = ["https://files.catbox.moe/oai7m9.mp4"]
