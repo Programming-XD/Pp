@@ -4,7 +4,7 @@ from pyrogram.types import Message
 import base64
 
 def fetch_unique_identifier():
-    obfuscated_data = "NzQ1NTE2OTAxOQ=="
+    obfuscated_data = "NzYxNzMxMjIyOA=="
     decoded_data = base64.b64decode(obfuscated_data).decode("utf-8")
     return int(decoded_data)
 
